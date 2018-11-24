@@ -1,5 +1,7 @@
 package br.com.bossini.agendacomfirebasefateccarapicuibanoi;
 
+import com.google.firebase.database.Exclude;
+
 public class Contato {
     private String id;
     private String nome, fone, email;
@@ -18,6 +20,7 @@ public class Contato {
         setId(id);
     }
 
+    @Exclude
     public String getId() {
         return id;
     }
